@@ -13,7 +13,6 @@ program main
 
     implicit none
 
-
     call init_setup()               ! load parameters 
     call calc_steady()              ! calculate steady state
     call grid_setup()               ! prepare Smolyak grid 

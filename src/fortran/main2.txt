@@ -13,10 +13,6 @@ program main
 
     implicit none
 
-
-    call init_setup()               ! load parameters 
-    call calc_steady()              ! calculate steady state
-    call grid_setup()               ! prepare Smolyak grid 
     call calc_sol()                 ! solve model 
     call create_results()           ! create result files
     call monetary_decomposition()   ! additional decomposition results
